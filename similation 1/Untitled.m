@@ -1,0 +1,10 @@
+x = 0 : 0.1 : ( 2pi ); 
+plot( x, sin( x ), 'rx', 'linewidth', 2 ); 
+hold on; 
+plot( x, cos( x/3 ) - 0.25, 'bs', 'linewidth', 2 ); 
+plot( x, cos( 4x )/3, '^g', 'linewidth', 2 );
+hold off;
+xlim( [ 0, 2*pi ] );
+grid on;
+title( 'Sample Plot' );
+set( gca, 'fontsize', 16 );
